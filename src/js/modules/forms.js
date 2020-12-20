@@ -54,6 +54,9 @@ const forms = (state) => {
                    clearInputs();
                    setTimeout(() => {
                        statusMessage.remove();
+                       let popupCalcEnd = document.querySelector('.popup_calc_end');
+                       console.log(popupCalcEnd);
+                       popupCalcEnd.style.display = "none";
                    }, 5000);
                });
         });

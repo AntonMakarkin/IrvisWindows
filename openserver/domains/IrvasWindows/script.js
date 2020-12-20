@@ -18008,9 +18008,12 @@ var forms = function forms(state) {
         return statusMessage.textContent = message.failure;
       }).finally(function () {
         clearInputs();
-        setTimeout(function () {
-          statusMessage.remove();
-        }, 5000);
+        /*setTimeout(() => {
+            //statusMessage.remove();
+            let popupCalcEnd = document.querySelector('.popup_calc_end');
+            console.log(popupCalcEnd);
+            popupCalcEnd.style.display = "none";
+        }, 5000);*/
       });
     });
   });
